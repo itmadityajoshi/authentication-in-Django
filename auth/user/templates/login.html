@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+
+<body>
+    <h2>login page</h2>
+    <div>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{loginform.as_p}}
+            <input type="submit" value="login"><br>
+            create Account 
+             <a href="{% url 'register' %}">Here</a>
+
+        </form>
+    </div>
+</body>
+
+</html>
